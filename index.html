@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cadastro</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+   <link rel="stylesheet" href="./styler.css">
+</head>
+
+<body>
+   <form action="">
+      <div class="cd">
+         <legend>Cadastrar novo produto</legend> 
+            <h5>Dados básicos</h5>      
+      <div class="row">
+         <div class="mb-3 col-6">
+            <label for="formGroupExampleInput" class="form-label">Nome do produto <svg class="vermelho" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-asterisk" viewBox="0 0 16 16">
+               <path d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1"/>
+             </svg></label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Meu produto teste">
+         </div>
+         <div class="mb-3 col-2">
+            <label for="formGroupExampleInput2" class="form-label">Código(SKU)<svg class="colores" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+               <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+             </svg></label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Teste12345">
+         </div>
+         <div class="mb-3 col-2">
+            <label for="formGroupExampleInput2" class="form-label">Preço venda</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="150.00">
+         </div>
+         <div class="mb-3 col-2">
+            <label for="formGroupExampleInput2" class="form-label">Unidade</label>
+            <input type="text" class="form-control" placeholder="un">
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-2">
+            <label>Condição</label>
+            <select class="form-select" aria-label="Default select example">
+               <option selected>Novo</option>
+               <option value="1">One</option>
+               <option value="2">Two</option>
+               <option value="3">Three</option>
+            </select>
+         </div>
+         <div class="col-2">
+            <label>Tipo</label>
+            <select class="form-select" aria-label="Default select example">
+               <option selected>Produto</option>
+               <option value="1">One</option>
+               <option value="2">Two</option>
+               <option value="3">Three</option>
+            </select>
+         </div>
+         <div class="col-3">
+            <label for="">Produto com composição</label>
+            <div class="form-check form-switch teste">
+               <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+               <label class="form-check-label" for="flexSwitchCheckDefault">Desativado</label>
+            </div>
+         </div>
+      </div>
+      <div class=" mt-3 col-2">
+         <label for="">Categoria <svg class="colores" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+          </svg><svg class="colores" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+            <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+          </svg></label>
+         <select class="form-select" aria-label="Default select example">
+            <option selected>Sem categoria</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+         </select>
+      </div>
+
+      <div class="row fixed-bottom p-4 bg-light">
+         <div class="col-md-12 bg-white text-dark shadow d-flex align-items-center justify-content-between"
+            style="height: 100px;">
+            <button type="button" class="btn btn-outline-success me-2 btn-lg" disabled>Cancelar</button>
+            <div class="d-flex align-items-center">
+               <label class="colors" for="">Ir para mais detalhes do produto</label>
+               </p>
+               <button type="button" class="btn btn-success ms-1 btn-lg">Avançar</button>
+            </div>
+         </div>
+      </div>
+
+   </form>
+
+
+</body>
+
+</html>
